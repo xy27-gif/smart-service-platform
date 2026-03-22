@@ -1,0 +1,8 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "智享服务管理平台",
+  "usingComponents": {
+    "nav-bar": "/pages/common/Navbar/navbar",
+    "phone": "/components/uni-phone/index"
+  }
+}

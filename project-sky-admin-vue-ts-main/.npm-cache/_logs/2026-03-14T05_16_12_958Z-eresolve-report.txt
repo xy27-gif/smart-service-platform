@@ -1,0 +1,111 @@
+'Log files:
+D:\ai-sky\project-sky-admin-vue-ts-main\project-sky-admin-vue-ts-main\.npm-cache\_logs\2026-03-14T05_16_12_958Z-debug-0.log
+
+# npm resolution error report
+
+While resolving: eslint-plugin-vue@5.2.3
+Found: eslint@6.7.2
+node_modules/eslint
+  dev eslint@"^6.2.2" from the root project
+  peer eslint@"*" from @typescript-eslint/experimental-utils@1.13.0
+  node_modules/@typescript-eslint/experimental-utils
+    @typescript-eslint/experimental-utils@"1.13.0" from @typescript-eslint/eslint-plugin@1.13.0
+    node_modules/@typescript-eslint/eslint-plugin
+      @typescript-eslint/eslint-plugin@"^1.1.0" from @vue/eslint-config-typescript@4.0.0
+      node_modules/@vue/eslint-config-typescript
+        dev @vue/eslint-config-typescript@"^4.0.0" from the root project
+    @typescript-eslint/experimental-utils@"1.13.0" from @typescript-eslint/parser@1.13.0
+    node_modules/@typescript-eslint/parser
+      peer @typescript-eslint/parser@"^1.9.0" from @typescript-eslint/eslint-plugin@1.13.0
+      node_modules/@typescript-eslint/eslint-plugin
+        @typescript-eslint/eslint-plugin@"^1.1.0" from @vue/eslint-config-typescript@4.0.0
+        node_modules/@vue/eslint-config-typescript
+          dev @vue/eslint-config-typescript@"^4.0.0" from the root project
+      @typescript-eslint/parser@"^1.1.0" from @vue/eslint-config-typescript@4.0.0
+      node_modules/@vue/eslint-config-typescript
+        dev @vue/eslint-config-typescript@"^4.0.0" from the root project
+  peer eslint@">= 4.12.1" from babel-eslint@10.0.3
+  node_modules/babel-eslint
+    dev babel-eslint@"^10.0.3" from the root project
+    babel-eslint@"^10.0.1" from @vue/cli-plugin-eslint@3.12.1
+    node_modules/@vue/cli-plugin-eslint
+      dev @vue/cli-plugin-eslint@"^3.11.0" from the root project
+  peer eslint@">=5.0.0" from eslint-config-standard@12.0.0
+  node_modules/eslint-config-standard
+    eslint-config-standard@"^12.0.0" from @vue/eslint-config-standard@4.0.0
+    node_modules/@vue/eslint-config-standard
+      dev @vue/eslint-config-standard@"^4.0.0" from the root project
+  peer eslint@">=1.6.0 <7.0.0" from eslint-loader@2.2.1
+  node_modules/eslint-loader
+    eslint-loader@"^2.1.2" from @vue/cli-plugin-eslint@3.12.1
+    node_modules/@vue/cli-plugin-eslint
+      dev @vue/cli-plugin-eslint@"^3.11.0" from the root project
+  peer eslint@">= 3.2.1" from eslint-plugin-cypress@2.7.0
+  node_modules/eslint-plugin-cypress
+    eslint-plugin-cypress@"^2.2.1" from @vue/cli-plugin-e2e-cypress@3.12.1
+    node_modules/@vue/cli-plugin-e2e-cypress
+      dev @vue/cli-plugin-e2e-cypress@"^3.11.0" from the root project
+  peer eslint@">=4.19.1" from eslint-plugin-es@1.4.1
+  node_modules/eslint-plugin-es
+    eslint-plugin-es@"^1.3.1" from eslint-plugin-node@8.0.1
+    node_modules/eslint-plugin-node
+      eslint-plugin-node@"^8.0.0" from @vue/eslint-config-standard@4.0.0
+      node_modules/@vue/eslint-config-standard
+        dev @vue/eslint-config-standard@"^4.0.0" from the root project
+      peer eslint-plugin-node@">=7.0.0" from eslint-config-standard@12.0.0
+      node_modules/eslint-config-standard
+        eslint-config-standard@"^12.0.0" from @vue/eslint-config-standard@4.0.0
+        node_modules/@vue/eslint-config-standard
+          dev @vue/eslint-config-standard@"^4.0.0" from the root project
+  peer eslint@"2.x - 6.x" from eslint-plugin-import@2.18.2
+  node_modules/eslint-plugin-import
+    eslint-plugin-import@"^2.14.0" from @vue/eslint-config-standard@4.0.0
+    node_modules/@vue/eslint-config-standard
+      dev @vue/eslint-config-standard@"^4.0.0" from the root project
+    peer eslint-plugin-import@">=2.13.0" from eslint-config-standard@12.0.0
+    node_modules/eslint-config-standard
+      eslint-config-standard@"^12.0.0" from @vue/eslint-config-standard@4.0.0
+      node_modules/@vue/eslint-config-standard
+        dev @vue/eslint-config-standard@"^4.0.0" from the root project
+  peer eslint@">=4.19.1" from eslint-plugin-node@8.0.1
+  node_modules/eslint-plugin-node
+    eslint-plugin-node@"^8.0.0" from @vue/eslint-config-standard@4.0.0
+    node_modules/@vue/eslint-config-standard
+      dev @vue/eslint-config-standard@"^4.0.0" from the root project
+    peer eslint-plugin-node@">=7.0.0" from eslint-config-standard@12.0.0
+    node_modules/eslint-config-standard
+      eslint-config-standard@"^12.0.0" from @vue/eslint-config-standard@4.0.0
+      node_modules/@vue/eslint-config-standard
+        dev @vue/eslint-config-standard@"^4.0.0" from the root project
+  peer eslint@">=5.0.0" from eslint-plugin-standard@4.0.1
+  node_modules/eslint-plugin-standard
+    eslint-plugin-standard@"^4.0.0" from @vue/eslint-config-standard@4.0.0
+    node_modules/@vue/eslint-config-standard
+      dev @vue/eslint-config-standard@"^4.0.0" from the root project
+    peer eslint-plugin-standard@">=4.0.0" from eslint-config-standard@12.0.0
+    node_modules/eslint-config-standard
+      eslint-config-standard@"^12.0.0" from @vue/eslint-config-standard@4.0.0
+      node_modules/@vue/eslint-config-standard
+        dev @vue/eslint-config-standard@"^4.0.0" from the root project
+  peer eslint@">=3.9.0" from vue-eslint-parser@2.0.3
+  node_modules/vue-eslint-parser
+    vue-eslint-parser@"^2.0.3" from eslint-plugin-vue@4.7.1
+    node_modules/@vue/cli-plugin-eslint/node_modules/eslint-plugin-vue
+      optional eslint-plugin-vue@"^4.7.1" from @vue/cli-plugin-eslint@3.12.1
+      node_modules/@vue/cli-plugin-eslint
+        dev @vue/cli-plugin-eslint@"^3.11.0" from the root project
+
+Could not resolve dependency:
+peer eslint@"^5.0.0" from eslint-plugin-vue@5.2.3
+node_modules/eslint-plugin-vue
+  dev eslint-plugin-vue@"^5.2.3" from the root project
+
+Conflicting peer dependency: eslint@5.16.0
+node_modules/eslint
+  peer eslint@"^5.0.0" from eslint-plugin-vue@5.2.3
+  node_modules/eslint-plugin-vue
+    dev eslint-plugin-vue@"^5.2.3" from the root project
+
+Fix the upstream dependency conflict, or retry
+this command with --force or --legacy-peer-deps
+to accept an incorrect (and potentially broken) dependency resolution.

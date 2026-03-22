@@ -1,0 +1,113 @@
+<view class="chat-page">
+  <!-- 导航栏 -->
+  <view class="nav-bar">
+    <view class="nav-right"></view>
+    <view class="nav-title">智能客服</view>
+    <view class="nav-right"></view>
+  </view>
+  
+  <!-- 聊天消息区域 -->
+  <scroll-view 
+    class="chat-container" 
+    scroll-y="true" 
+    scroll-into-view="{{scrollToView}}"
+    enhanced="true"
+    show-scrollbar="false">
+    
+    <!-- 返回按钮 -->
+    <view class="back-button" bindtap="goBack">
+      <text class="back-button-icon">←</text>
+    </view>
+    
+    <!-- 欢迎消息 -->
+    <view class="welcome-box" wx:if="{{messages.length === 0}}">
+      <image class="ai-avatar" src="/static/btn_waiter_sel.png"></image>
+      <view class="welcome-text">您好！我是智能客服助手</view>
+      <view class="welcome-subtext">有什么可以帮您的吗？</view>
+    </view>
+    
+    <!-- 消息列表 -->
+    <view class="message-list">
+      <view 
+        wx:for="{{messages}}" 
+        wx:key="id" 
+        id="msg-{{item.id}}"
+        class="message-wrapper {{item.type}}-wrapper">
+        
+        <!-- AI消息 -->
+        <view wx:if="{{item.type === 'ai'}}" class="message-row ai-row">
+          <image class="avatar ai-avatar-small" src="/static/btn_waiter_sel.png"></image>
+          <view class="message-content ai-content">
+            <view class="message-bubble ai-bubble">
+              <text class="message-text">{{item.content}}</text>
+              <view wx:if="{{item.isStreaming}}" class="streaming-indicator">
+                <view class="dot"></view>
+                <view class="dot"></view>
+                <view class="dot"></view>
+              </view>
+            </view>
+            <view class="message-time">{{item.time}}</view>
+          </view>
+        </view>
+        
+        <!-- 用户消息 -->
+        <view wx:if="{{item.type === 'user'}}" class="message-row user-row">
+          <view class="message-content user-content">
+            <view class="message-bubble user-bubble">
+              <text class="message-text">{{item.content}}</text>
+            </view>
+            <view class="message-time">{{item.time}}</view>
+          </view>
+          <view class="avatar user-avatar">
+            <text class="avatar-text">我</text>
+          </view>
+        </view>
+        
+        <!-- 系统消息 -->
+        <view wx:if="{{item.type === 'system'}}" class="system-message">
+          <text class="system-text">{{item.content}}</text>
+        </view>
+      </view>
+    </view>
+    
+    <!-- 底部占位 -->
+    <view id="chat-bottom" style="height: 20rpx;"></view>
+  </scroll-view>
+  
+  <!-- 快捷问题 -->
+  <view class="quick-questions" wx:if="{{messages.length === 0 || showQuickQuestions}}">
+    <view class="quick-title">常见问题</view>
+    <view class="quick-list">
+      <view 
+        wx:for="{{quickQuestions}}" 
+        wx:key="*this"
+        class="quick-item"
+        bindtap="sendQuickQuestion"
+        data-question="{{item}}">
+        {{item}}
+      </view>
+    </view>
+  </view>
+  
+  <!-- 输入区域 -->
+  <view class="input-area">
+    <view class="input-box">
+      <input 
+        class="message-input" 
+        value="{{inputMessage}}" 
+        bindinput="onInputChange"
+        bindconfirm="sendMessage"
+        placeholder="请输入您的问题..."
+        confirm-type="send"
+        maxlength="200"/>
+      <view wx:if="{{inputMessage.length > 0}}" class="clear-btn" bindtap="clearInput">×</view>
+    </view>
+    <button 
+      class="send-btn {{inputMessage.trim() ? 'active' : ''}}" 
+      bindtap="sendMessage"
+      disabled="{{isLoading || !inputMessage.trim()}}">
+      <text wx:if="{{!isLoading}}">发送</text>
+      <view wx:else class="loading-spinner"></view>
+    </button>
+  </view>
+</view>
